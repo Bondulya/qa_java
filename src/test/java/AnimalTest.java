@@ -34,4 +34,12 @@ public class AnimalTest {
         Assert.assertEquals(expectedFood,actualFood);
     }
 
+    @Test
+    public void  getFoodAnimalReturnValidValueHomoSapiens() throws Exception {
+        Animal animal = new Animal();
+        List<String> expectedFood =List.of("Трава и Животные", "Вся еда");
+        List<String> actualFood = animal.getFood("Вся еда");
+        Assert.assertEquals(expectedFood,actualFood);
+    }
+
 }

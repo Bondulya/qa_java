@@ -15,6 +15,7 @@ public class CatTest {
     @Mock
     Predator predator;
 
+
     @Test
     public void getSoundReturnCorrectValue(){
         Cat cat = new Cat(new Feline());
